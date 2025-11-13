@@ -2,7 +2,7 @@ public class Collatz {
     public static void main(String args[]) {
         int seed = Integer.parseInt(args[0]);
         String mode = args[1];
-        int steps = 1; 
+        int steps = 1;
         for (int i = 1; i <= seed; i++) {
             int currentTerm = i;
             steps = 1;
@@ -17,7 +17,7 @@ public class Collatz {
                 }
                 steps++;
 
-                if (mode.equals("v")) { //118=v 
+                if (mode.equals("v")) { 
                     System.out.print(currentTerm + " ");
                 }
             } while (currentTerm != 1);
