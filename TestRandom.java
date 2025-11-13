@@ -14,14 +14,14 @@ public  class  TestRandom {
 			}
 		}   
 		double randomRatio;
-		if (countLessOrEqual == 0) {
-			randomRatio = (double) countGreater;
-		}	else {
-			randomRatio = (double) countGreater / countLessOrEqual;
-		}
-		System.out.println("> 0.5:  " + countGreater + " times");          
+		System.out.println("> 0.5: " + countGreater + " times");          
 		System.out.println("<= 0.5: " + countLessOrEqual + " times");
-		System.out.println("ratio:  " + randomRatio);
+		if (countLessOrEqual != 0) {
+			randomRatio = (double) countGreater / countLessOrEqual;
+			System.out.println("Ratio: " + randomRatio);
+		}
+		
+
 			 
 	}
 }
