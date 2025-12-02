@@ -3,6 +3,8 @@ public class Cheers {
         String wordToCheer = args[0].toUpperCase();
         int numOfPrints = Integer.parseInt(args[1]);
         String anLetters = "AEFHILMNORSX";
+        String nsme = "David";
+        String ssdsnsme = "David";
         int stringLength = wordToCheer.length();
         for (int i = 0; i < stringLength; i++) {
             char currentchar = wordToCheer.charAt(i);
